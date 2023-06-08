@@ -1,0 +1,238 @@
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    /* background-image: url("./bg-main.svg"); */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1054%26quot%3b)' fill='none'%3e%3cpath d='M1201.092668448315 568.4656420898907L1109.326229354477 432.41630126996495 1065.043327628389 660.2320811837287z' fill='rgba(240%2c 128%2c 255%2c 0.04)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1099.06 219.2 a173.71 173.71 0 1 0 347.42 0 a173.71 173.71 0 1 0 -347.42 0z' fill='rgba(240%2c 128%2c 255%2c 0.04)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M576.65%2c219.633C591.458%2c220.157%2c604.841%2c211.042%2c612.115%2c198.133C619.256%2c185.459%2c619.113%2c169.938%2c611.707%2c157.417C604.433%2c145.119%2c590.928%2c138.714%2c576.65%2c138.173C561.221%2c137.588%2c544.049%2c141.012%2c536.665%2c154.572C529.474%2c167.777%2c537.413%2c182.956%2c545.286%2c195.766C552.659%2c207.763%2c562.578%2c219.135%2c576.65%2c219.633' fill='rgba(240%2c 128%2c 255%2c 0.04)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M90.81435935966446 226.477791604544L229.68060075376502 204.4835396813674 207.68634883058843 65.61729828726683 68.82010743648786 87.61155021044343z' fill='rgba(240%2c 128%2c 255%2c 0.04)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M89.81366353514963 239.34526328612122L-14.734585017776041 205.37547812462225 55.84387837365065 343.8935118390469z' fill='rgba(240%2c 128%2c 255%2c 0.04)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M127.95062448078886-51.33783303914L-11.960759633067255-44.005388101316214-4.628314695243461 95.9059960125399 135.28306941861265 88.57355107471611z' fill='rgba(240%2c 128%2c 255%2c 0.04)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1225.145%2c395.214C1282.219%2c395.424%2c1328.147%2c350.775%2c1352.955%2c299.375C1374.704%2c254.313%2c1363.784%2c203.317%2c1338.642%2c160.056C1313.652%2c117.057%2c1274.8%2c82.242%2c1225.145%2c79.458C1170.53%2c76.395%2c1114.541%2c98.563%2c1087.229%2c145.958C1059.949%2c193.298%2c1072.501%2c250.633%2c1098.953%2c298.441C1126.459%2c348.154%2c1168.33%2c395.005%2c1225.145%2c395.214' fill='rgba(240%2c 128%2c 255%2c 0.04)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M678.96 462.11 a143.05 143.05 0 1 0 286.1 0 a143.05 143.05 0 1 0 -286.1 0z' fill='rgba(240%2c 128%2c 255%2c 0.04)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M266.22 61.64 a167.14 167.14 0 1 0 334.28 0 a167.14 167.14 0 1 0 -334.28 0z' fill='rgba(240%2c 128%2c 255%2c 0.04)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1021.6844622639143 403.39067001342164L1107.8659845300208 381.9032031848282 1000.1969954353208 317.2091477473151z' fill='rgba(240%2c 128%2c 255%2c 0.04)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M749.6398881219617 372.87171342724173L875.4479631371989 267.30620408283255 769.8824537927898 141.49812906759536 644.0743787775525 247.06363841200454z' fill='rgba(240%2c 128%2c 255%2c 0.04)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1054'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+}
+
+.form-container>.custom-form {
+    height: fit-content;
+    width: 500px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(22px);
+    backdrop-filter: blur(22px);
+    border: 1px solid rgba(255, 255, 255, 0.025);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 50px 35px;
+    margin: 100px 20px;
+}
+
+.form-container>.custom-form * {
+    font-family: "Poppins", sans-serif;
+    color: var(--light-primary);
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.form-container>.custom-form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.form-container>.custom-form h3::first-letter {
+    font-family: cursive;
+    color: var(--heaven-primary);
+}
+
+.form-container>.custom-form>label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-container>.custom-form>input,
+.college-select,
+.form-container>.custom-form>.gender {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.form-container>.custom-form>input:focus {
+    border: 0.5px dashed rgba(238, 130, 238, 0.227);
+    background-color: var(--hell-primary);
+}
+
+.form-container>.custom-form>input::placeholder {
+    color: var(--light-primary);
+    opacity: 0.8;
+}
+
+.form-container>.custom-form>button {
+    background-image: linear-gradient( to right, #000000 0%, #6d4b34 51%, #000000 100%);
+    padding: 15px 45px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: var(--light-primary);
+    border-radius: 10px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container>.custom-form>button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: var(--light-primary);
+    text-decoration: none;
+}
+
+.form-container>.custom-form>button>.spinner {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 3.8px solid #ffffff;
+    animation: spinner-bulqg1 0.8s infinite linear alternate, spinner-oaa3wk 1.6s infinite linear;
+}
+
+@keyframes spinner-bulqg1 {
+    0% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+    }
+    12.5% {
+        clip-path: polygon( 50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
+    }
+    25% {
+        clip-path: polygon( 50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%);
+    }
+    50% {
+        clip-path: polygon( 50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+    }
+    62.5% {
+        clip-path: polygon( 50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+    }
+    75% {
+        clip-path: polygon( 50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%);
+    }
+    100% {
+        clip-path: polygon( 50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%);
+    }
+}
+
+@keyframes spinner-oaa3wk {
+    0% {
+        transform: scaleY(1) rotate(0deg);
+    }
+    49.99% {
+        transform: scaleY(1) rotate(135deg);
+    }
+    50% {
+        transform: scaleY(-1) rotate(0deg);
+    }
+    100% {
+        transform: scaleY(-1) rotate(-135deg);
+    }
+}
+
+.form-container>.custom-form>.seprate-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: var(--light-primary);
+}
+
+.form-container>.custom-form>.seprate-div>div {
+    height: 1px;
+    width: 30px;
+    background-color: var(--light-primary);
+    margin: 0 10px;
+}
+
+.form-container>.custom-form>.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container>.custom-form>.social a {
+    background: var(--hell-primary);
+    width: 40%;
+    border-radius: 10px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255, 255, 255, 0.27);
+    color: var(--light-primary);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 799px) {
+    .form-container>.custom-form>.social>a>span {
+        font-size: 0.9rem;
+    }
+}
+
+.form-container>.custom-form>.social a:hover {
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+.form-container>.custom-form>.social .fb {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+.form-container>.custom-form>.social .fb img {
+    margin-right: 10px;
+}
+
+.form-container>.custom-form>small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: rgba(238, 130, 130, 0.605);
+}
+
+.form-container>.custom-form>small>a {
+    margin-left: 5px;
+}
+
+.form-container>.custom-form>.gender {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-container>.custom-form>.gender>input[type="radio"] {
+    margin: 0 10px;
+}
+
+.form-container>.custom-form>input[type="file"] {
+    padding-top: 10px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: rgba(255, 255, 255, 0.379);
+    padding: 5px;
+    border-radius: 10px;
+}

@@ -1,0 +1,60 @@
+.dialog-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.051);
+    backdrop-filter: blur(5px);
+    color: var(--light-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    user-select: none;
+}
+
+.dialog-container>.dialog {
+    background-color: var(--heaven-primary);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.dialog-container>.dialog>.dialog-head {
+    font-size: 1.5rem;
+    color: var(--dark-primary);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-container>.dialog>.dialog-head>span {
+    padding: 0 10px;
+}
+
+.dialog-container>.dialog>.dialog-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.dialog-container>.dialog>.dialog-btn>button {
+    padding: 3px 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.dialog-container>.dialog>.dialog-btn>.cancel {
+    background-color: var(--hell-primary);
+    outline: 1px solid var(--hell-primary);
+}
+
+.dialog-container>.dialog>.dialog-btn>.logout {
+    background-color: red;
+}
+
+.dialog-container>.dialog>.dialog-btn>.logout:hover {
+    background-color: rgb(255, 45, 45);
+}

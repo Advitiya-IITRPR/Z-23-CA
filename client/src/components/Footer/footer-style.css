@@ -1,0 +1,95 @@
+/* body {
+    margin: 0;
+    overflow-x: hidden;
+} */
+
+.myrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger !important;
+}
+
+.myfooter {
+    background-image: url("./footer-bg.svg");
+    padding: 30px 0px;
+    font-family: "Play", sans-serif;
+    text-align: center;
+    background-position: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.myfooter>.myrow {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+    transform: translateY(-10%);
+    animation: floater 3s infinite;
+    transition: ease 0.5s;
+}
+
+.myfooter>.myrow:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.myfooter>.myrow:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+@keyframes floater {
+    0% {
+        transform: translateY(-10%);
+        transition: ease 0.5s;
+    }
+    50% {
+        transform: translateY(10%);
+        transition: ease 0.5s;
+    }
+}
+
+.myfooter>.myrow a {
+    text-decoration: none;
+    color: var(--light-primary);
+    transition: 0.5s;
+}
+
+.myfooter>.myrow a:hover {
+    color: var(--hell-primary);
+}
+
+.myfooter>.myrow ul {
+    width: 100%;
+}
+
+.myfooter>.myrow ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.myfooter>.myrow a {
+    margin-right: 20px;
+}
+
+.myfooter>.myrow a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+    .myfooter {
+        text-align: left;
+        padding: 5%;
+        font-size: 0.6rem !important;
+    }
+    .myfooter>.myrow ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+    .myfooter>.myrow a i {
+        margin: 0% 3%;
+    }
+}

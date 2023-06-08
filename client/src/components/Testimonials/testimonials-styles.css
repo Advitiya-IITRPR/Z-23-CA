@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+.main-div-testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.main-div-testimonials>.testimonials-head>h1 {
+    font-size: 3rem;
+    color: var(--light-primary);
+    font-weight: 400;
+}
+
+.main-div-testimonials>.testimonials-head>h1::first-letter {
+    font-family: cursive;
+    color: var(--hell-primary);
+}
+
+figure.snip1390 {
+    font-family: "Roboto", Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 60px 10px;
+    width: 90%;
+    color: var(--dark-primary);
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(242, 242, 242, 0.274);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 798px) {
+    .main-div-testimonials>.testimonials-head>h1 {
+        font-size: 2.2rem;
+    }
+    figure.snip1390 {
+        margin: 60px;
+        width: 100%;
+        font-size: 10px;
+        padding: 20px;
+    }
+}
+
+figure.snip1390 *,
+figure.snip1390 *:before,
+figure.snip1390 *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+figure.snip1390 figcaption {
+    width: 100%;
+}
+
+figure.snip1390 h2,
+figure.snip1390 h4,
+figure.snip1390 blockquote {
+    margin: 0;
+}
+
+figure.snip1390 h2,
+figure.snip1390 h4 {
+    font-weight: 300;
+}
+
+figure.snip1390 h2 {
+    color: var(--hell-primary);
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+figure.snip1390 h4 {
+    color: var(--light-primary);
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+figure.snip1390 blockquote {
+    font-size: 1em;
+    color: var(--light-primary);
+    padding: 45px 20px 40px 50px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.138);
+    border-radius: 16px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.211);
+    position: relative;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+figure.snip1390 blockquote::first-letter {
+    font-size: 2em;
+    color: var(--hell-primary);
+    font-family: cursive;
+}
+
+figure.snip1390 blockquote:before {
+    font-family: "FontAwesome";
+    content: "\201C";
+    position: absolute;
+    font-size: 70px;
+    opacity: 0.5;
+    font-style: normal;
+    top: 0px;
+    left: 20px;
+}
+
+figure.snip1390 .profile {
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.main-div-testimonials>.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination-bullet {
+    color: #000;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--heaven-primary);
+}

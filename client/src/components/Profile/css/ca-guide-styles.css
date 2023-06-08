@@ -1,0 +1,92 @@
+.ca-guide-main {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-primary);
+    padding: 20px 10px;
+    user-select: none;
+    font-family: "Mulish";
+}
+
+a {
+    text-decoration: none;
+    color: var(--hell-primary);
+    transform: 0.3s ease;
+}
+
+a:hover {
+    color: var(--hell-primary);
+}
+
+.ca-guide-main>ul>li {
+    list-style: none;
+}
+
+.ca-guide-main>ul>li>.title {
+    color: var(--hell-primary);
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: 600;
+    position: relative;
+}
+
+.ca-guide-main>ul>li>.title::before {
+    position: absolute;
+    content: "";
+    background-color: var(--hell-primary);
+    bottom: 0px;
+    left: 0;
+    width: 5%;
+    height: 2px;
+    transition: 0.5s ease-in-out;
+}
+
+.ca-guide-main>ul>li>.title:hover::before {
+    width: 8%;
+}
+
+.ca-guide-main>ul>li>.title_1 {
+    color: var(--heaven-primary);
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.ca-guide-main>ul>li>ul>li {
+    list-style: decimal;
+    color: var(--light-primary);
+}
+
+.ca-guide-main>ul>li>ul>li>ul>li {
+    list-style: disc;
+    color: var(--light-primary);
+}
+
+@media screen and (max-width: 799px) {
+    .ca-guide-main {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 0.7rem;
+    }
+    .ca-guide-main>ul>li>.title {
+        font-size: 1.2rem;
+    }
+    .ca-guide-main>ul>li>.title::before {
+        position: absolute;
+        content: "";
+        bottom: 0px;
+        left: 0;
+        width: 5%;
+        height: 2px;
+        transition: 0.5s ease-in-out;
+    }
+    .ca-guide-main>ul>li>.title:hover::before {
+        width: 8%;
+    }
+    .ca-guide-main>ul>li>.title_1 {
+        font-size: 0.8rem;
+    }
+}

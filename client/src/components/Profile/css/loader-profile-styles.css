@@ -1,0 +1,22 @@
+.loader-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.loader-profile>.spinner {
+    width: 8px;
+    height: 8px;
+    animation: spinner-z355kx 1.4s infinite linear;
+    border-radius: 8px;
+    box-shadow: 20px 0px 0 0 var(--hell-primary), 12.4px 15.6px 0 0 var(--hell-primary), -4.4px 19.4px 0 0 var(--hell-primary), -18px 8.6px 0 0 var(--hell-primary), -18px -8.6px 0 0 var(--hell-primary), -4.4px -19.4px 0 0 var(--hell-primary), 12.4px -15.6px 0 0 var(--hell-primary);
+}
+
+@keyframes spinner-z355kx {
+    to {
+        transform: rotate(360deg);
+    }
+}

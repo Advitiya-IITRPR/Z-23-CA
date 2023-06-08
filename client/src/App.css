@@ -1,0 +1,30 @@
+/* Default Theme */
+
+
+/* :root {
+    --dark-primary: #2d3436;
+    --light-primary: #dfe6e9;
+    --heaven-primary: #27e9f0;
+    --hell-primary: #ff0200;
+} */
+
+
+/* Black and Red Theme */
+
+
+/* :root {
+    --dark-primary: #2d3436;
+    --light-primary: #dfe6e9;
+    --heaven-primary: #fff;
+    --hell-primary: rgb(223, 100, 223);
+} */
+
+
+/*  New */
+
+:root {
+    --dark-primary: #300404;
+    --light-primary: #ffebb7;
+    --heaven-primary: #ad8e70;
+    --hell-primary: #ff6e31;
+}

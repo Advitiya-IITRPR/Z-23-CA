@@ -1,0 +1,68 @@
+.home-about>.content>p {
+    color: var(--light-primary);
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.025);
+    padding: 30px 50px;
+    transform: skewX(-5deg);
+    position: relative;
+    border: 0.2px solid rgba(238, 130, 130, 0.419);
+    background: rgba(0, 218, 247, 0);
+    background: -webkit-linear-gradient( 90deg, rgba(247, 124, 0, 0.185) 0%, rgba(255, 154, 71, 0) 100%);
+    background: linear-gradient( 90deg, rgba(247, 74, 0, 0.185) 0%, rgba(255, 154, 71, 0) 100%);
+}
+
+.home-about>.content>p::first-letter {
+    color: var(--hell-primary);
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+.home-about>.content>p::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--hell-primary);
+}
+
+
+/* 
+.home-about {
+    overflow: hidden;
+} */
+
+.home-about>.content {
+    cursor: pointer;
+    transform-origin: left;
+    transition: 0.5s ease-in-out all;
+    animation: myAnm-Rotate 5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes myAnm-Rotate {
+    from {
+        transform: rotateZ(-2deg);
+    }
+    to {
+        transform: rotateZ(2deg);
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .home-about>.content>p {
+        font-size: 0.9rem;
+        padding: 20px 30px;
+        transform: skewX(-2deg);
+        position: relative;
+    }
+    .home-about>.content>p::first-letter {
+        font-size: 2rem;
+    }
+    .home-about>.content>p::before {
+        width: 5px;
+    }
+}

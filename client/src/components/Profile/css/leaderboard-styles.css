@@ -1,0 +1,310 @@
+.leaderboard-main {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+    flex-direction: column;
+    font-family: "Roboto";
+    font-weight: 100;
+    animation: myAnm-leaderboard 1s ease 1 both;
+}
+
+@keyframes myAnm-leaderboard {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.leaderboard-main>.leaderboard-leaders {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.leaderboard-main>.leaderboard-leaders>.leader-card {
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(29px);
+    backdrop-filter: blur(29px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--light-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    transition: 0.1s ease-in-out;
+}
+
+.leaderboard-main>.leaderboard-leaders>.leader-card:hover {
+    background: rgba(255, 255, 255, 0.115);
+    border: 1px solid var(--hell-primary);
+    cursor: pointer;
+}
+
+
+/* 
+.leaderboard-main>.leaderboard-leaders:hover> :not(:hover) {
+    opacity: 0.4;
+    background-color: rgba(255, 255, 255, 0.158);
+} */
+
+.leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-second,
+.leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-first>.leaders-card-details {
+    margin-right: 10px;
+}
+
+.leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-first>.leaders-card-details>.leaders-card-details-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-right: 10px;
+    color: var(--hell-primary);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 200px;
+}
+
+.leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-first>.leaders-card-details>.leaders-card-details-college {
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 200px;
+}
+
+.leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-first>.leaders-card-badge>img {
+    max-width: 50px;
+}
+
+.leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-second {
+    padding: 10px 0;
+}
+
+.leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-second>.points {
+    background-color: var(--hell-primary);
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--dark-primary);
+    width: 120px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-second>.referals {
+    background-color: var(--light-primary);
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--dark-primary);
+    width: 120px;
+    font-weight: 600;
+}
+
+.leaderboard-main>.leaders-list>.search-bar>input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    color: var(--hell-primary);
+}
+
+.leaderboard-main>.leaders-list>.search-bar>input[type="text"]::placeholder {
+    color: var(--hell-primary);
+    font-style: italic;
+}
+
+.leaderboard-main>.leaders-list>.search-bar>input[type="text"]:focus {
+    background-color: rgba(253, 253, 253, 0.215);
+}
+
+.leaderboard-main>.leaders-list {
+    width: 95%;
+    overflow: auto;
+    margin: 10px;
+    height: 300px;
+    border: 0.1px solid rgba(255, 255, 255, 0.267);
+    border-radius: 10px;
+}
+
+.leaderboard-main>.leaders-list>table {
+    width: 100%;
+    overflow: auto;
+    transition: 0.2s ease;
+}
+
+.leaderboard-main>.leaders-list>table:hover {
+    background-color: rgba(5, 5, 5, 0.086);
+}
+
+.leaderboard-main>.leaders-list>table>thead {
+    width: 100%;
+    color: var(--light-primary);
+    border-radius: 10px;
+    background-color: var(--heaven-primary);
+    position: sticky;
+    top: 0;
+}
+
+.leaderboard-main>.leaders-list>table>thead>tr>th {
+    padding: 10px;
+}
+
+.leaderboard-main>.leaders-list>table>thead>tr>th:first-child {
+    width: 100px;
+}
+
+.leaderboard-main>.leaders-list>table>tbody {
+    width: 100%;
+    color: var(--light-primary);
+}
+
+.leaderboard-main>.leaders-list>table>tbody>tr>td {
+    border: 0.1px solid rgba(255, 255, 255, 0.267);
+    padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .leaderboard-main {
+        height: 100%;
+        width: auto;
+        position: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        flex-direction: column;
+        font-family: "Roboto";
+        font-weight: 100;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .leaderboard-main>.leaderboard-leaders {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        height: auto;
+        flex-direction: row;
+        margin: 5px 0;
+        overflow: hidden;
+    }
+    .leaderboard-main>.leaderboard-leaders>.leader-card {
+        width: 80px;
+        max-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px;
+        position: relative;
+    }
+    .leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-second,
+    .leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    .leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-first>.leaders-card-details {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-first>.leaders-card-details>.leaders-card-details-name {
+        font-size: 0.6rem;
+        font-weight: 600;
+        margin-right: 5px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 40px;
+    }
+    .leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-first>.leaders-card-details>.leaders-card-details-college {
+        font-size: 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 40px;
+    }
+    .leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-first>.leaders-card-badge>img {
+        max-width: 20px;
+    }
+    .leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-second {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 0.5rem;
+    }
+    .leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-second>.points {
+        border-radius: 5px;
+        padding: 5px;
+        width: 100%;
+        font-weight: 600;
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    .leaderboard-main>.leaderboard-leaders>.leader-card>.leaders-card-second>.referals {
+        border-radius: 5px;
+        padding: 5px;
+        width: 100%;
+        margin-top: 5px;
+        font-weight: 600;
+    }
+    .leaderboard-main>.leaders-list {
+        width: 100%;
+        overflow: auto;
+        margin: 10px;
+        height: 300px;
+        border: 0.1px solid rgba(255, 255, 255, 0.267);
+        border-radius: 10px;
+    }
+    .leaderboard-main>.leaders-list>table {
+        width: 100%;
+        overflow: auto;
+        font-size: 0.8rem;
+    }
+    .leaderboard-main>.leaders-list>table>thead {
+        width: 100%;
+        border-radius: 10px;
+        position: sticky;
+        top: 0;
+    }
+    .leaderboard-main>.leaders-list>table>thead>tr>th {
+        padding: 10px;
+    }
+    .leaderboard-main>.leaders-list>table>thead>tr>th:first-child {
+        width: 50px;
+    }
+    .leaderboard-main>.leaders-list>table>tbody {
+        width: 100%;
+    }
+    .leaderboard-main>.leaders-list>table>tbody>tr>td {
+        border: 0.1px solid rgba(255, 255, 255, 0.267);
+        padding: 10px;
+    }
+}

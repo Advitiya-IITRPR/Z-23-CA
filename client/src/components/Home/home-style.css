@@ -1,0 +1,362 @@
+.social-icons {
+    display: inline-block !important;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.icon-colour {
+    color: var(--heaven-primary) !important;
+}
+
+
+/* Home3 Main */
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+.home-container {
+    background-color: var(--background-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 80px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    /* background-image: url("https://getwallpapers.com/wallpaper/full/e/7/3/535426.jpg"); */
+    /* background-image: url("https://wallpapercave.com/wp/wp2216448.jpg"); */
+    background-color: transparent;
+    /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 89%); */
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    overflow: hidden !important;
+    position: relative;
+}
+
+.home-container>.home-content {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* background: rgba(0, 0, 0, 0.567);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(0px); */
+    /* border: 0px solid rgba(255, 255, 255, 0.25); */
+    border-radius: 16px;
+    height: 75vh;
+    margin-top: 80px;
+}
+
+.home-container::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(10, 10, 10, 0.275);
+    z-index: -1;
+}
+
+.home-container>video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -999;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-60%);
+    opacity: 0.5;
+}
+
+.home-container>.home-content>.header {
+    padding: 20px 0px;
+}
+
+.home-container>.home-content>.header>h1 {
+    font-family: "Island Moments";
+    font-size: 12rem;
+    color: var(--hell-primary);
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.home-container>.home-content>.subheader {
+    font-family: "Mulish";
+    padding: 20px 0px;
+    color: var(--light-primary);
+}
+
+.home-container>.home-content>.subheader>h1 {
+    font-size: 2rem;
+}
+
+.home-container>.home-content>.header>h1::first-letter {
+    color: var(--light-primary);
+}
+
+.home-container>.home-content>.registration-btn>a {
+    background-image: linear-gradient( to right, var(--hell-primary) 0%, var(--heaven-primary) 51%, var(--hell-primary) 100%);
+    padding: 15px 40px;
+    text-decoration: none;
+    color: var(--dark-primary);
+    transition: 0.5s ease;
+    display: inline-block;
+    -webkit-transform: skewX(-10deg);
+    -moz-transform: skewX(-10deg);
+    -o-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    position: relative;
+    background-size: 300% auto;
+}
+
+.home-container>.home-content>.registration-btn>a::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 60%;
+    height: 50%;
+    border-top: 1px solid var(--hell-primary);
+    border-left: 1px solid var(--hell-primary);
+    transition: 0.5s ease;
+}
+
+.home-container>.home-content>.registration-btn>a:hover::before {
+    width: 80%;
+    height: 70%;
+    border-color: var(--heaven-primary);
+}
+
+.home-container>.home-content>.registration-btn>a:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: var(--light-primary);
+}
+
+@media screen and (max-width: 1000px) {
+    .home-container {
+        padding: 10px 50px;
+        color: var(--light-primary);
+    }
+    .home-container>.home-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home-container>.home-content>.header {
+        padding: 10px 0px;
+    }
+    .home-container>.home-content>.header>h1 {
+        font-family: "Island Moments";
+        font-size: 6rem;
+        -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+        animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    }
+    .home-container>.home-content>.subheader {
+        font-family: "Mulish";
+        padding: 50px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-container>.home-content>.subheader>h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .home-container>.home-content>.registration-btn>a {
+        padding: 10px 30px;
+    }
+    .home-container>video {
+        transform: scale3d(2.5, 2.5, 2.5);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-10-27 0:40:29
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+
+.text-focus-in {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+/* We offer section */
+
+.home-offers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.home-offers>.offers-header {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-offers>.offers-header>h1 {
+    color: var(--light-primary);
+    font-size: 3rem;
+    font-family: "Mulish";
+}
+
+.home-offers>.offers-header>h1::first-letter {
+    color: var(--hell-primary);
+    font-family: cursive;
+}
+
+.home-offers>.offers-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide>.slide-container {
+    display: flex;
+    width: 700px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(6, 6, 6, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px 20px;
+    border-radius: 16px;
+    margin: 30px 20px;
+}
+
+.swiper-slide>.slide-container>.slide-img {
+    border-radius: 16px;
+    overflow: hidden;
+    height: 300px;
+}
+
+.swiper-slide>.slide-container>.slide-img>img {
+    height: 100%;
+}
+
+.swiper-slide>.slide-container>.main-content {
+    padding: 10px 20px;
+    color: var(--light-primary);
+}
+
+.swiper-slide>.slide-container>.main-content>.content-header>h1 {
+    font-size: 2rem;
+    font-family: "Mulish";
+    color: var(--light-primary);
+}
+
+.swiper-slide>.slide-container>.main-content>.content-header>h1::first-letter {
+    font-family: cursive;
+    color: var(--hell-primary);
+}
+
+.swiper-slide>.slide-container>.main-content>.content-text {
+    max-height: 150px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 799px) {
+    .home-offers>.offers-header {
+        padding: 20px 40px;
+    }
+    .home-offers>.offers-header>h1 {
+        font-size: 2rem;
+    }
+    .swiper-slide>.slide-container {
+        padding: 10px 10px;
+        border-radius: 16px;
+        margin: 20px 10px;
+    }
+    .swiper-slide>.slide-container>.slide-img {
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    .swiper-slide>.slide-container>.main-content {
+        padding: 10px 20px;
+        color: var(--light-primary);
+    }
+    .swiper-slide>.slide-container>.main-content>.content-header>h1 {
+        font-size: 1.2rem;
+        font-family: "Mulish";
+        color: var(--light-primary);
+    }
+    .swiper-slide>.slide-container>.main-content>.content-header>h1::first-letter {
+        font-family: cursive;
+        color: var(--hell-primary);
+    }
+    .swiper-slide>.slide-container>.main-content>.content-text {
+        max-height: 100px;
+        overflow: auto;
+    }
+}
